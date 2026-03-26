@@ -14,26 +14,26 @@
 </head>
 <body>
 
-	<header class="site-header">
-		<div class="container nav-flex">
-			<div class="logo">Scott&apos;s Mobile Auto Mechanic</div>
-			
-			<div class="menu-toggle" id="mobile-menu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
+    <header class="site-header">
+        <div class="container nav-flex">
+            <div class="logo">Scott&apos;s Mobile Auto Mechanic</div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-			<nav>
-				<ul class="nav-links">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/top-banner.avif');">
         <div class="hero-content">
@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section id="about" class="section container">
-        <div class="about-grid">
-            <div class="about-text">
-                <h2 style="margin-bottom:14px;">Dependable Roadside Care</h2>
-                <p>Scott&apos;s Mobile Auto Mechanic provides 24/7 emergency roadside assistance and mobile repair services throughout Sevierville and the Smoky Mountain region. Whether you're stuck in your driveway or on the side of the highway, I bring the shop to you.</p>
-                <p style="margin-top:8px;">With a focus on speed, safety, and transparency, I handle everything from battery jumps and tire changes to complex engine diagnostics.</p>
-            </div>
-            <div class="about-image">
-                <img src="./images/about-mechanic.jpg" alt="Mechanic at work" onerror="this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop'">
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 style="margin-bottom:14px;">Dependable Roadside Care</h2>
+                    <p>Scott&apos;s Mobile Auto Mechanic provides 24/7 emergency roadside assistance and mobile repair services throughout Sevierville and the Smoky Mountain region. Whether you're stuck in your driveway or on the side of the highway, I bring the shop to you.</p>
+                    <p style="margin-top:8px;">With a focus on speed, safety, and transparency, I handle everything from battery jumps and tire changes to complex engine diagnostics.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./images/about-mechanic.jpg" alt="Mechanic at work" onerror="this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop'">
+                </div>
             </div>
         </div>
     </section>
@@ -64,20 +66,21 @@
                 <div class="gallery-item"><img src="./images/thumb3.jpg" alt="Repair 2" onerror="this.src='https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=400&h=300&fit=crop'"></div>
                 <div class="gallery-item"><img src="./images/thumb3.jpg" alt="Repair 3" onerror="this.src='https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=400&h=300&fit=crop'"></div>
                 <div class="gallery-item"><img src="./images/thumb3.jpg" alt="Repair 4" onerror="this.src='https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=400&h=300&fit=crop'"></div>
-
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section container">
-        <h2 class="text-center">Contact Scott</h2>
-        <div class="contact-wrapper">
-            <form id="contact-form" name="contact" data-netlify="true">
-                <input name="name" type="text" placeholder="Your Name" required>
-                <input name="email" type="email" placeholder="Your Email" required>
-                <textarea name="comment" rows="5" placeholder="Describe your vehicle problem..." required></textarea>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center">Contact Scott</h2>
+            <div class="contact-wrapper">
+                <form id="contact-form" name="contact" data-netlify="true">
+                    <input name="name" type="text" placeholder="Your Name" required>
+                    <input name="email" type="email" placeholder="Your Email" required>
+                    <textarea name="comment" rows="5" placeholder="Describe your vehicle problem..." required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
