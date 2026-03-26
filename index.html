@@ -74,12 +74,14 @@
         <div class="container">
             <h2 class="text-center">Contact Scott</h2>
             <div class="contact-wrapper">
-                <form id="contact-form" name="contact" data-netlify="true">
-                    <input name="name" type="text" placeholder="Your Name" required>
-                    <input name="email" type="email" placeholder="Your Email" required>
-                    <textarea name="comment" rows="5" placeholder="Describe your vehicle problem..." required></textarea>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
+				<form id="contact-form" name="contact" data-netlify="true">
+					<input type="hidden" name="form-name" value="contact"> 
+					
+					<input name="name" type="text" placeholder="Your Name" required>
+					<input name="email" type="email" placeholder="Your Email" required>
+					<textarea name="comment" rows="5" placeholder="Describe your vehicle problem..." required></textarea>
+					<button type="submit" class="btn-submit">Send Message</button>
+				</form>
             </div>
         </div>
     </section>

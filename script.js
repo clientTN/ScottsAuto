@@ -34,15 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 4. Form Submission Handling
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // For now, this just shows a success message. 
-            // On Netlify, you can add "data-netlify='true'" to your HTML form tag 
-            // to actually receive these messages in your dashboard.
-            alert('Thanks for reaching out! Scott will contact you shortly.');
-            contactForm.reset();
-        });
-    }
+	if (contactForm) {
+		contactForm.addEventListener('submit', (e) => {
+			e.preventDefault();
+
+			const formData = new FormData(contactForm);
+
+			fetch("/", {
+				method: "POST",
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: new URLSearchParams(formData).toString(),
+			})
+			.then(() => {
+				alert('Thanks for reaching out! Scott will contact you shortly.');
+				contactForm.reset();
+			})
+			.catch((error) => alert('Form submission error: ' + error));
+		});
+	}
 });
